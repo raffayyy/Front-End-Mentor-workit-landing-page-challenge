@@ -54,11 +54,13 @@ body {
   border-bottom: 2px solid #44ffa1;
   padding-bottom: 0.5rem;
   transition-duration: 0.5s;
+
 }
 
 #btn:hover {
   border-bottom: 2px solid white;
   color: #44ffa1;
+  transform: scale(1.25);
 }
 
 #bottom-hero {
@@ -119,6 +121,11 @@ body {
   left: 50%;
   top: 65%;
   transform: translateX(-45%);
+  transition-duration: 0.5s;
+
+}
+#hero-image:hover{
+  transform: skew(-1deg,-1deg);
 }
 
 #description-container {
@@ -346,6 +353,7 @@ body {
     position: relative;
     top:0;
     left:0;
+    width: 85%;
   }
 
   #footer {
