@@ -51,17 +51,24 @@ body {
 
 #btn {
   font-size: 1rem;
-  border-bottom: 2px solid #44ffa1;
   padding-bottom: 0.5rem;
   transition-duration: 0.5s;
-
 }
 
-#btn:hover {
-  border-bottom: 2px solid white;
-  color: #44ffa1;
-  transform: scale(1.25);
+#btn:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
 }
+#btn:hover:after {
+	width: 100%;
+	background: #44ffa1;
+}
+
 
 #bottom-hero {
   display: flex;
